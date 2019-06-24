@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+    pre {
+      display: block;
+      width: 100%;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>This is an example of using verify-viewer webcomponent:</h2>
+  <pre lang="javascript">
+      &lt;verify-viewer style="width: 80%; height: 70vh" url="https://peculiarventures.github.io/ExamplePDFs/signed/BILLS-106s761enr.pdf"&gt;&lt;/verify-viewer&gt;
+
+      &lt;script type=&quot;module&quot; src=&quot;https://verify.ink/webcomponent/index.js&quot;&gt;&lt;/script&gt;
+  </pre>
+  <h3>The live result:</h3>
+  <verify-viewer style="width: 80%; height: 70vh" url="https://peculiarventures.github.io/ExamplePDFs/signed/BILLS-106s761enr.pdf"></verify-viewer>
+
+  <script type="module" src="https://verify.ink/webcomponent/index.js"></script>
+
+  <h2>Another approach is to import inside your script</h2>
+  <pre lang="javascript">
+      &lt;script type=&quot;module&quot;&gt;
+        import 'https://verify.ink/webcomponent/index.js'
+      &lt;/script&gt;
+  </pre>
+</body>
+</html>
